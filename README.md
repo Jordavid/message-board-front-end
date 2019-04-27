@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # FrontEnd
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
@@ -30,3 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # message-board-front-end
 An Angular App with Authentication with JsonWebToken
 >>>>>>> fd134fe0b31a7e37f863b1c25c53fa0b9bc2d670
+=======
+# message-board-front-end
+An Angular App with Authentication with JsonWebToken
+>>>>>>> d366dd93413a87246433e4015388eba94b0ad363
