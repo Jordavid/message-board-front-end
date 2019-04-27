@@ -1,0 +1,28 @@
+<div class="profile-container">
+  <mat-card >
+    <div class="profile-form">
+      <mat-card-title>
+          <h3>User Profile</h3>
+        </mat-card-title>
+        <mat-card-content>
+            <p>Update your profile</p>
+            <mat-form-field class="full-width">
+              <input [(ngModel)]="user.firstName" class="full-width" matInput placeholder="First Name" >
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+              <input [(ngModel)]="user.lastName" matInput placeholder="Last Name">
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+              <input [(ngModel)]="user.email" matInput placeholder="Email" disabled readonly>
+            </mat-form-field>
+
+          <mat-card-actions>
+            <button (click)="updateUser()" class="btn" mat-stroked-button color="primary">Save Changes</button>
+          </mat-card-actions>
+        </mat-card-content>
+    </div>
+
+  </mat-card>
+</div>

@@ -1,0 +1,26 @@
+<div class="login-container">
+  <mat-card>
+    <form class="login-form" [formGroup]="form" (submit)="onSubmit()">
+      <mat-card-title>
+        <h3>Login</h3>
+      </mat-card-title>
+      <mat-card-content>
+          <p style="color: rebeccapurple;">Please Fill the form below to login</p>
+
+          <mat-form-field class="full-width">
+            <input type="email" matInput placeholder="Email" formControlName="email">
+            <small class="error" *ngIf="isValid('email')">* Email filed should be an email</small>
+          </mat-form-field>
+
+          <mat-form-field class="full-width">
+            <input type="password" matInput placeholder="Password" formControlName="password">
+            <small class="error"*ngIf="isValid('password')">* Password is require</small>
+          </mat-form-field>
+
+          <mat-card-actions>
+            <button mat-stroked-button class="btn" color="primary">Login</button>
+          </mat-card-actions>
+        </mat-card-content>
+      </form>
+  </mat-card>
+</div>

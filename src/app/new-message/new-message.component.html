@@ -1,0 +1,21 @@
+<div class="new-message">
+  <mat-card>
+    <mat-card-title>
+      New Message
+    </mat-card-title>
+    <mat-card-content>
+<!--
+        <mat-form-field class="inputField">
+          <input [(ngModel)]="message.owner" matInput placeholder="Name" >
+        </mat-form-field> -->
+
+        <mat-form-field class="inputField">
+          <input [(ngModel)]="message.body" matInput placeholder="Message">
+        </mat-form-field>
+
+      <mat-card-actions>
+        <button (click)="sendMessage()" mat-stroked-button color="primary">Send</button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,11 @@
+.messages{
+  margin: auto 15px;
+}
+
+mat-card{
+  margin: 8px;
+}
+
+#cardTitle:hover {
+  cursor: pointer;
+}

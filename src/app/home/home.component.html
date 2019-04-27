@@ -1,0 +1,13 @@
+<h2 class="homeTitle">The best and newest website for you!</h2>
+<div *ngFor="let content of contents">
+  <div class="homeContents">
+    <mat-card>
+      <mat-card-title>
+        {{content.title}}
+      </mat-card-title>
+      <mat-card-content>
+        {{content.content}}
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

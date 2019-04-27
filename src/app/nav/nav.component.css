@@ -1,0 +1,7 @@
+.navBar{
+  margin: auto 22px;
+}
+
+#theTitle:hover {
+  cursor: pointer;
+}

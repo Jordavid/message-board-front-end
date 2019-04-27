@@ -1,0 +1,11 @@
+.new-message{
+  margin: auto 15px;
+}
+
+mat-card{
+  margin: 8px;
+}
+
+.inputField {
+  width: 100%;
+}

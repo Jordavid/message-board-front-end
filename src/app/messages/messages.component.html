@@ -1,0 +1,16 @@
+<app-new-message (onPosted)="onPosted($event)"></app-new-message>
+<div class="messages">
+    <div *ngFor="let message of messages">
+        <mat-card>
+            <mat-card-title [routerLink]="['/messages', message.owner]" id="cardTitle">
+              {{ message.owner }}
+            </mat-card-title>
+          <mat-card-content>
+            {{ message.body }}
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-stroked-button>Reply</button>
+          </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="navBar">
+  <mat-toolbar color="primary">
+      <span routerLink="/" id="theTitle">Message Board</span>
+      <mat-icon matBadge="{{msgs.length}}" matBadgeColor="warn" *ngIf="auth.isAuthenticated"></mat-icon>
+      <span style="flex: 1 1 auto"></span>
+      <button mat-button routerLink="messages" *ngIf="auth.isAuthenticated">Messages</button>
+      <button mat-button routerLink="/">Home</button>
+      <button mat-button routerLink="login" *ngIf="!auth.isAuthenticated">Login</button>
+      <button mat-button routerLink="register" *ngIf="!auth.isAuthenticated">Register</button>
+      <button mat-button routerLink="login" *ngIf="auth.isAuthenticated" (click)="auth.logout()">Logout</button>
+      <button mat-button routerLink='user' style="font-weight: bold; padding: 15px;" *ngIf="auth.isAuthenticated">Welcome {{auth.name}}</button>
+  </mat-toolbar>
+</div>

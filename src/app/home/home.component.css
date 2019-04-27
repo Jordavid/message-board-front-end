@@ -1,0 +1,16 @@
+mat-card{
+  margin: 8px;
+}
+
+.homeContents{
+  margin: auto 15px;
+}
+
+.homeTitle {
+  text-align: center; 
+  background: cadetblue; 
+  padding: 15px; 
+  margin: 22px; 
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
